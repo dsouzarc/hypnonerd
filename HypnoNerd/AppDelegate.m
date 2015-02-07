@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "BNRHypnosisViewController.h"
 #import "BNRReminderViewController.h"
+#import "BNRViewController.h"
 
 @interface AppDelegate ()
 
@@ -33,10 +34,13 @@
     //Look for xib and set it as view
     BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:appBundle];
     
+    BNRViewController *quiz = [[BNRViewController alloc] initWithNibName:@"BNRViewController" bundle:appBundle];
+    
+    
     //self.window.rootViewController = rvc;
     
     UITabBarController *tabs = [[UITabBarController alloc] init];
-    tabs.viewControllers = @[hvc, rvc];
+    tabs.viewControllers = @[hvc, rvc, quiz];
     
     self.window.rootViewController = tabs;
     
