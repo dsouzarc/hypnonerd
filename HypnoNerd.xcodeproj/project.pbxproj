@@ -106,9 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				94B894C21A844A26006AACE9 /* BNRHypnosisViewController.h */,
-				94B894D71A86BD61006AACE9 /* BNRViewController.h */,
-				94B894D81A86BD61006AACE9 /* BNRViewController.m */,
-				94B894DA1A86BE36006AACE9 /* BNRViewController.xib */,
 				94B894C31A844A26006AACE9 /* BNRHypnosisViewController.m */,
 				94B894CA1A86AEFA006AACE9 /* BNRReminderViewController.h */,
 				94B894CB1A86AEFA006AACE9 /* BNRReminderViewController.m */,
@@ -120,13 +117,11 @@
 				94B894971A843592006AACE9 /* ViewController.h */,
 				94B894981A843592006AACE9 /* ViewController.m */,
 				94B8949A1A843592006AACE9 /* Main.storyboard */,
-				94B8949D1A843592006AACE9 /* Images.xcassets */,
 				94B8949F1A843592006AACE9 /* LaunchScreen.xib */,
+				94B8949D1A843592006AACE9 /* Images.xcassets */,
+				94B894DD1A86C077006AACE9 /* Images */,
 				94B894901A843592006AACE9 /* Supporting Files */,
-				94B894CF1A86B73F006AACE9 /* Hypno.png */,
-				94B894D01A86B73F006AACE9 /* Hypno@2x.png */,
-				94B894D11A86B73F006AACE9 /* Time.png */,
-				94B894D21A86B73F006AACE9 /* Time@2x.png */,
+				94B894DC1A86C04E006AACE9 /* Quiz Files */,
 			);
 			path = HypnoNerd;
 			sourceTree = "<group>";
@@ -155,6 +150,27 @@
 				94B894AB1A843593006AACE9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94B894DC1A86C04E006AACE9 /* Quiz Files */ = {
+			isa = PBXGroup;
+			children = (
+				94B894D71A86BD61006AACE9 /* BNRViewController.h */,
+				94B894D81A86BD61006AACE9 /* BNRViewController.m */,
+				94B894DA1A86BE36006AACE9 /* BNRViewController.xib */,
+			);
+			name = "Quiz Files";
+			sourceTree = "<group>";
+		};
+		94B894DD1A86C077006AACE9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				94B894CF1A86B73F006AACE9 /* Hypno.png */,
+				94B894D01A86B73F006AACE9 /* Hypno@2x.png */,
+				94B894D11A86B73F006AACE9 /* Time.png */,
+				94B894D21A86B73F006AACE9 /* Time@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
