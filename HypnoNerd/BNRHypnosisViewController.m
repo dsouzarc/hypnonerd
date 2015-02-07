@@ -11,7 +11,6 @@
 
 @interface BNRHypnosisViewController () <UITextFieldDelegate>
 
-
 @end
 
 @implementation BNRHypnosisViewController
@@ -21,9 +20,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     
     if(self) {
-        
         self.tabBarItem.title = @"Hypnotize";
-        
         self.tabBarItem.image = [UIImage imageNamed:@"Hypno.png"];
     }
     
