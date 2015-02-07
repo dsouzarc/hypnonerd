@@ -21,7 +21,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    //BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
+    BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
     //self.window.rootViewController = hvc;
     
     NSBundle *appBundle = [NSBundle mainBundle];
@@ -29,7 +29,12 @@
     //Look for xib and set it as view
     BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController" bundle:appBundle];
     
-    self.window.rootViewController = rvc;
+    //self.window.rootViewController = rvc;
+    
+    UITabBarController *tabs = [[UITabBarController alloc] init];
+    tabs.viewControllers = @[hvc, rvc];
+    
+    self.window.rootViewController = tabs;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
