@@ -30,7 +30,36 @@
     return self;
 }
 
-
+- (void)drawHypnoticMessage:(NSString *)message
+{
+    for(int i = 0; i < 20; i++) {
+        
+        UILabel *messageLabel = [[UILabel alloc] init];
+        
+        messageLabel.text = message;
+        messageLabel.textColor = [UIColor whiteColor];
+        messageLabel.backgroundColor = [UIColor clearColor];
+        
+        //Resizes label to be relative to size of text
+        [messageLabel sizeToFit];
+        
+        //Random x inside hypnosis view
+        int width = (int) (self.view.bounds.size.width - messageLabel.bounds.size.width);
+        int x = arc4random() % width;
+        
+        //Random y inside hypnosis view height
+        int height = (int) (self.view.bounds.size.height - messageLabel.bounds.size.height);
+        int y = arc4random() % height;
+        
+        //Update frame
+        CGRect frame = messageLabel.frame;
+        frame.origin = CGPointMake(x, y);
+        messageLabel.frame = frame;
+        
+        [self.view addSubview:messageLabel];
+        
+    }
+}
 
 -(void)loadView
 {
@@ -53,7 +82,13 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    NSLog(@"%@", textField.text);
+    [self drawHypnoticMessage:textField.text];
+    
+    textField.text = @"";
+    
+    //Dismisses keyboard
+    [textField resignFirstResponder];
+    
     return YES;
 }
 
