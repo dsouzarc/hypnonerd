@@ -22,6 +22,7 @@
 		94B894D41A86B73F006AACE9 /* Hypno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B894D01A86B73F006AACE9 /* Hypno@2x.png */; };
 		94B894D51A86B73F006AACE9 /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B894D11A86B73F006AACE9 /* Time.png */; };
 		94B894D61A86B73F006AACE9 /* Time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B894D21A86B73F006AACE9 /* Time@2x.png */; };
+		94B894D91A86BD61006AACE9 /* BNRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B894D81A86BD61006AACE9 /* BNRViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		94B894D01A86B73F006AACE9 /* Hypno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hypno@2x.png"; sourceTree = "<group>"; };
 		94B894D11A86B73F006AACE9 /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
 		94B894D21A86B73F006AACE9 /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time@2x.png"; sourceTree = "<group>"; };
+		94B894D71A86BD61006AACE9 /* BNRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRViewController.h; sourceTree = "<group>"; };
+		94B894D81A86BD61006AACE9 /* BNRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				94B894C21A844A26006AACE9 /* BNRHypnosisViewController.h */,
+				94B894D71A86BD61006AACE9 /* BNRViewController.h */,
+				94B894D81A86BD61006AACE9 /* BNRViewController.m */,
 				94B894C31A844A26006AACE9 /* BNRHypnosisViewController.m */,
 				94B894CA1A86AEFA006AACE9 /* BNRReminderViewController.h */,
 				94B894CB1A86AEFA006AACE9 /* BNRReminderViewController.m */,
@@ -256,6 +261,7 @@
 			files = (
 				94B894991A843592006AACE9 /* ViewController.m in Sources */,
 				94B894CD1A86AEFA006AACE9 /* BNRReminderViewController.m in Sources */,
+				94B894D91A86BD61006AACE9 /* BNRViewController.m in Sources */,
 				94B894961A843592006AACE9 /* AppDelegate.m in Sources */,
 				94B894B81A8435C5006AACE9 /* BNRHypnosisView.m in Sources */,
 				94B894931A843592006AACE9 /* main.m in Sources */,
