@@ -2,7 +2,7 @@
 //  BNRReminderViewController.m
 //  HypnoNerd
 //
-//  Created by Ryan D'souza on 2/5/15.
+//  Created by Ryan D'souza on 2/7/15.
 //  Copyright (c) 2015 Ryan D'souza. All rights reserved.
 //
 
@@ -16,30 +16,30 @@
 
 @implementation BNRReminderViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if (self) {
+        // Set the tab bar item's title
+        //self.tabBarItem.title = @"Reminder";
+        
+        // Create a UIImage from a file
+        // This will use Time@2x.png on retina display devices
+        //UIImage *image = [UIImage imageNamed:@"Time.png"];
+        
+        // Put that image on the tab bar item
+        //self.tabBarItem.image = image;
+    }
+    
+    return self;
+}
+
+
 - (IBAction)addReminder:(id)sender
 {
-    NSDate *dateChosen = self.datePicker.date;
-    NSLog(@"%@ was chosen", dateChosen);
+    NSDate *date = self.datePicker.date;
+    NSLog(@"Setting a reminder for %@", date);
 }
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
